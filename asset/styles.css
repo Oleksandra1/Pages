@@ -1,0 +1,31 @@
+:root {
+  --font-main: font-family: "Cardo", serif;
+  --font-minor: font-family: "Inter", sans-serif;
+  --basik-color: #1B3764;
+  --btn-color:#FFCA42;
+
+
+}
+html,
+body {
+  font-weight: 400;
+}
+.header{
+    background-color: var(--basik-color);
+    font-family: var(--font-main);
+}
+.btn{
+    background-color: var(--btn-color) ;
+    font-family: var(--font-main);
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav .nav-link.active{
+    color: var(--btn-color);
+}
+.frame-one{
+    background-color: var(--basik-color);
+    color: white;
+    font-family: var(--font-main);
+}
