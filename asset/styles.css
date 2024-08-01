@@ -1,3 +1,4 @@
+/*===================== General rules ====================*/
 :root {
   --font-main: font-family: "Cardo", serif;
   --font-minor: font-family: "Inter", sans-serif;
@@ -10,22 +11,123 @@ html,
 body {
   font-weight: 400;
 }
+.container-fluid{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.btn, .dropdown, .dropdown-menu{
+    border-radius: 0;
+    background-color: var(--btn-color);
+    color: var(--basik-color);
+    
+}
+.btn:hover{
+    background-color: grey;  
+}
+section {
+    padding: 50px 0;
+}
+
+.section-title{
+   position: relative;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.section-title span{
+    background-color: white;
+    padding-right: 1rem;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed gray ;
+    z-index: -1;
+ }
+ 
+
+/*===================== Header rules ====================*/
 .header{
     background-color: var(--basik-color);
     font-family: var(--font-main);
-}
-.btn{
-    background-color: var(--btn-color) ;
-    font-family: var(--font-main);
-}
-.nav-link{
     color: white;
 }
-.navbar-nav .nav-link.active{
-    color: var(--btn-color);
+
+.header-top-phone a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+.header-top-phone a:hover{
+    text-decoration: underline;
+}
+ul.social-icons{
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    padding-right: 90px;
+
+} 
+ul.social-icons a{
+    color: white;
+    height: 30px;
+    width: 30px;
+    
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+}
+ul.social-icons a:hover {
+    background-color: white;
+    color: var(--basik-color);
+    transition: all .3s;
+}
+ul.social-icons li{
+    margin-right: 10px;
 }
 .frame-one{
     background-color: var(--basik-color);
     color: white;
     font-family: var(--font-main);
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--btn-color);
+    transition: all .4s;
+}
+
+/*======================================= Main ====================================*/
+/*===================== Curusel ====================*/
+.carousel-item img{
+    height: 850px;
+    object-fit: cover;
+}
+.carousel-caption{
+    text-shadow: 0 0 2px rgb(0, 0, 0, 1);
+}
+.carousel-caption p {
+    font-size: 1.5rem; 
+}
+
+/*===================== advatages ====================*/
+.advatages .items .item{
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.advatages .items .item:hover{
+    box-shadow: 0 15px 30px -15px rgb(0, 0, 0, .7);
+}
+.item p{
+    color: grey;
 }
