@@ -82,7 +82,7 @@ ul.social-icons{
     list-style: none;
     margin-bottom: 0;
     padding: 0;
-    padding-right: 90px;
+    
 
 } 
 ul.social-icons a{
@@ -113,6 +113,12 @@ ul.social-icons li{
 .nav-link:hover{
     color: var(--btn-color);
     transition: all .4s;
+}
+#biCartBtn{
+    margin-left: 20px;
+}
+.navbar-toggler{
+    background-color: var(--btn-color);
 }
 
 /*======================================= Main ====================================*/
@@ -238,6 +244,12 @@ position: relative;
 .owl-carousel-full .owl-item img{
     display: inline-block;
     width: auto;
+}
+.biCart{
+    max-height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 1px;
 }
 /*===================== Product card ====================*/
 

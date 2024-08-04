@@ -20,7 +20,7 @@ $(document).ready(function(){
                 items: 1
             },
             500: {
-                items: 2
+                items: 1
             },
             700: {
                 items: 3
@@ -32,3 +32,4 @@ $(document).ready(function(){
 
         });
   });
+
