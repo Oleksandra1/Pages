@@ -33,3 +33,19 @@ $(document).ready(function(){
         });
   });
 
+const offcanvasCartEl = document.getElementById('offcanvasCart');
+const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
+
+document.getElementById('cart-open').addEventListener('click', (e) => {
+    e.preventDefault();
+    offcanvasCart.toggle();
+});
+
+document.querySelectorAll('.closecart').forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        offcanvasCart.hide();
+        let href = item.CDATA_SECTION_NODE.href;
+        document.getElementById(href).scrollIntoView(); 
+    });
+});

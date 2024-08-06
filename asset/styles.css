@@ -120,7 +120,27 @@ ul.social-icons li{
 .navbar-toggler{
     background-color: var(--btn-color);
 }
+/*==================Bascet==============*/
+.offcanvasCart-table .product-img-td{
+   width: 70px;
+   text-align: center;
+}
+.offcanvasCart-table a{
+   text-decoration: none;
+   display: block;
+}
+.offcanvasCart-table a:hover{
+    text-decoration: underline;
+    display: block;
+ }
+.offcanvasCart-table img{
+    max-width: 50px;
+}
+.product-img-td{
 
+}
+
+/*==================Bascet==============*/
 /*======================================= Main ====================================*/
 /*===================== Curusel ====================*/
 .carousel-item img{
@@ -247,10 +267,12 @@ position: relative;
 }
 .biCart{
     max-height: 30px;
+    width: 42px;
     padding-top: 3px;
     padding-bottom: 3px;
     margin-right: 1px;
 }
+
 /*===================== Product card ====================*/
 
 /*===================== Featured products ====================*/

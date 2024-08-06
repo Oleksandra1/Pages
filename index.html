@@ -21,6 +21,7 @@
 <body>
     <div class="wrapper">
         <header class="header sticky-top">
+          <!---------Header Top------------>
             <div class="header-top py-1">
                 <div class="container-fluid">
                     <div class="row">
@@ -41,17 +42,68 @@
                         <div class="d-flex justify-content-end">
                           <div class="btn-group ">
                             <div class="">
-                              <button class=" biCart btn ms-1" id="biCartBtn"><i class="bi bi-cart"></i></button>
+                              <button class="biCart btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas2" data-bs-target="#offcanvasCart"
+                              aria-controls="offcanvasCart"><i class="bi bi-cart"></i></button>
                             </div>
-                            <div class="dropdown">
-                              <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Account
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="#">Sign In</a></li>
-                                <li><a class="dropdown-item " href="#">Sign Up</a></li>
-                              </ul>
+                            <!-------------Bascet---------------->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-tittle" id="offcanvasCartLabel">Cart</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <div class="table-responsive">
+                                  <table class="table offcanvasCart-table">
+                                    <tbody>
+                                      <tr>
+                                        <td class="product-img-td">
+                                          <a href=""><img src="/asset/image/catalog/kniga_a_court_of_thorns_and_roses_book_1.jpg" alt=""></a>
+                                        </td>
+                                        <td>
+                                          <a href="">A Court of Thorns and Roses (Book 1)</a>
+                                        </td>
+                                        <td>$65</td>
+                                        <td>&times;1</td>
+                                        <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="product-img-td">
+                                          <a href=""><img src="/asset/image/catalog/kniga_a_good_girl_s_guide_to_murder_book_1.webp" alt=""></a>
+                                        </td>
+                                        <td>
+                                          <a href="">A Good Girl's Guide to Murder (Book 1)</a>
+                                        </td>
+                                        <td>$70</td>
+                                        <td>&times;2</td>
+                                        <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="product-img-td">
+                                          <a href=""><img src="/asset/image/catalog/kniga_a_little_life.webp" alt=""></a>
+                                        </td>
+                                        <td>
+                                          <a href="">A Little Life</a>
+                                        </td>
+                                        <td>$60</td>
+                                        <td>&times;3</td>
+                                        <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr>
+                                        <td colspan="4" class="text-end">Total:</td>
+                                        <td>$195</td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                                <div class="text-end">
+                                  <a href="" class="btn btn-outline-warning">Cart</a>
+                                  <a href="" class="btn btn-outline-secondary">Checkout</a>
+                                </div>
+                              </div>s                             
                             </div>
+                            <!----------------Bascet---------------->
                             <div class="dropdown">
                               <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
@@ -69,6 +121,8 @@
                     </div>
                 </div>
             </div>
+          <!---------Header Top------------>
+          <!---------Header Bottom------------>  
             <div class="header-bottom">
               <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
@@ -76,34 +130,30 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
                     </span>
-                  </button>
-                  
+                  </button>                  
                   <div class="collapse navbar-collapse col-sm-6" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">                       
                       <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#Products">Products</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="#Newitems">New items</a>
                       </li> <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#Map">Map</a>
                       </li>
                     </ul>
                     <div class="d-flex ">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                      
+                      <button class="btn btn-outline-success" type="submit">Search</button>  
                     </div>
-                  </div>
-                  
-                  
+                  </div>                  
                 </div>
               </nav>
             </div>
+          <!---------Header Bottom------------>  
         </header>
         <main>
           <div id="carousel" class="carousel slide d-none d-md-block">
@@ -198,7 +248,7 @@
             </div>
           </section>
 
-          <section class="featured-products">
+          <section class="featured-products" id="Products">
             <div class="container-fluid">
               <div class="row mb-5">
                 <div class="col-12">
@@ -437,7 +487,7 @@
             </div>
           </section>
 
-          <section class="new-products">
+          <section class="new-products" id="Newitems">
             <div class="container-fluid">
               <div class="row mb-5">
                 <div class="col-12">
@@ -619,7 +669,7 @@
             </div>
           </section>
 
-          <section class="about-us">
+          <section class="about-us" id="about">
             <div class="container-fluid">
               <div class="row mb-5">
                 <div class="col-12">
@@ -638,10 +688,12 @@
             </div>
           </section>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.5889630092797!2d-122.32150509715626!3d47.61468161672526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906abb2a5a31ff%3A0xc2065ae0c1ffa743!2sElliott%20Bay%20Book%20Company!5e0!3m2!1suk!2sua!4v1722672494126!5m2!1suk!2sua" 
-          width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <section id="Map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.5889630092797!2d-122.32150509715626!3d47.61468161672526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906abb2a5a31ff%3A0xc2065ae0c1ffa743!2sElliott%20Bay%20Book%20Company!5e0!3m2!1suk!2sua!4v1722672494126!5m2!1suk!2sua" 
+            width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+          </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3 col-6">
